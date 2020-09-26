@@ -29,6 +29,14 @@
 	<button id="btnCalculatePrivateKey">Calculate</button>
 
 	<hr>
+	<label for="txtPlainText">Plain text: </label>
+	<textarea id="txtPlainText" rows="5" cols="50"></textarea>
+
+	<label for="txtPlainText">Encoded: </label>
+	<textarea id="txtEncodedText" rows="5" cols="50" disabled></textarea>
+
+	<button id="btnEncodePlainText">Encode</button>
+	<hr>
 	
 	<label for="txtCipherText">Cipher text (decimal): </label>
 	<textarea id="txtCipherText" rows="5" cols="50">46062 67334 4825 33538 52810 69038</textarea>
@@ -40,16 +48,7 @@
 
 	<button id="btnDecodeCipherText">Decode</button>
 
-	<hr>
-
-	<label for="txtPlainText">Plain text: </label>
-	<textarea id="txtPlainText" rows="5" cols="50"></textarea>
-
-	<label for="txtPlainText">Encoded: </label>
-	<textarea id="txtEncodedText" rows="5" cols="50" disabled></textarea>
-
-	<button id="btnEncodePlainText">Encode</button>
-
+	
 	<script>
 	(function()
 	{

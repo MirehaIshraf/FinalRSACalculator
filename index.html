@@ -1,11 +1,12 @@
 
+
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
 
-    <title>RSA Calculator by Mohammad Minhaj Reza Hasan</title>
+    <title>RSA Calculator</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
@@ -215,7 +216,7 @@
         <h1>
             <div id="title">Public Key Cryptography using RSA algorithm</div>
         </h1>
-        <div id="author">by: Minhaj Reza Hasan(17701099)</a></div>
+        <div id="author">by: Minhaj Reza Hasan(17701099)</div>
         <div id="clear"></div>
     </header>
     <br/>
@@ -259,7 +260,7 @@
                     <td><input type="text" id="e" onchange="encryptorChanged()"/></td>
                     <td>encryption key</td>
                     <td></td>
-    
+                    <td class="help">Find a number between 1 and L that is <a href="https://en.wikipedia.org/wiki/Coprime_integers" target="_blank">coprime</a> with L and N.<span id="enKeyListSpan"></span></td>
                 </tr>
                 <tr>
                     <td>D</td>
@@ -286,7 +287,7 @@
         <p><input type="button" value="Encrypt" onclick="encrypt()"/></p>
         <hr/>
         <p>Message converted to ASCII code: <span id="ascii"></span></p>
-        <p>Encrypted message: message^E % N &nbsp; &nbsp; &nbsp;
+        <p>Encrypted message: message^E % N &nbsp; &nbsp; &nbsp;<span class="help">(<a href="http://umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/" >PowerMod</a> can be used to calculate this very fast. Formula is applied on ASCII code of each character.)</span></p>
         <section>
             <div class="key">
                 <span class="key-label">Encrypted Message: </span><span id="encrypted-msg" class="key-value"></span>
@@ -299,20 +300,21 @@
         <p><input type="button" value="Decrypt" onclick="decrypt()"/></p>
         <hr/>        
         <p>Message decrypted to ASCII code: <span id="ascii-decrypted"></span></p>
-        <p>Decrypted Message: encrypted_message^D % N &nbsp; &nbsp; &nbsp;
+        <p>Decrypted Message: encrypted_message^D % N &nbsp; &nbsp; &nbsp;<span class="help">(<a href="http://umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/" >PowerMod</a> can be used to calculate this very fast. Formula is applied on ASCII code of each character.)</span></p>
         <section>
             <div class="key">
                 <span class="key-label">Decrypted Message: </span><span id="decrypted-msg" class="key-value"></span>
             </div>                
         </section>
     </article> 
-    <footer>
+    <footer >
     <p>Mohammad Minhaj Reza Hasan @ <a href="https://https://cu.ac.bd/?L=en">University of Chittagong</a></p>
     <script type="text/javascript">
     let theDate = new Date();
     document.write("Copyright&copy; "+theDate.getFullYear());
     </script>
-    </footer>
+  </footer>
+    
 </body>
 
 </html>
